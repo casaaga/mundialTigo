@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>.:: Tigo Copa Mundial de la FIFA 2014™ App ::.</title>
+
+    <script src="js/modernizr.js"></script>
+
+    <!--[if (gt IE 8) | (IEMobile)]><!-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/jquery.sharer.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <!--<![endif]-->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+</head>
+<body>
+
+<div id="outer-wrap">
+<div id="inner-wrap">
+
+    <header id="top" role="banner">
+        <div class="block">
+            <figure class="logo">
+                <img src="img/logo.png" alt="">
+            </figure>
+
+            <a class="nav-btn" id="nav-open-btn" href="#nav">Book Navigation</a>
+        </div>
+    </header>
+
+    <nav id="nav" role="navigation">
+        <div class="block">
+            <h2 class="block-title">Chapters</h2>
+            <ul>
+                <li >
+                    <a href="index.html">
+                        <figure class="icon-nav"> 
+                            <img src="img/nav-1.png" alt="">
+                        </figure> 
+                        Inicio
+                    </a>
+                </li><!--
+             --><li >
+                   <a href="planes.html">
+                        <figure class="icon-nav"> <img src="img/nav-2.png" alt=""> </figure>
+                        Planes
+                    </a>
+                </li><!--
+             --><!--<a href="descargas.html">
+                        <figure class="icon-nav"> <img src="img/nav-3.png" alt=""> </figure>
+                        Descargas
+                    </a>--><!--
+             --><li>
+                    <a href="contrasena.html">
+                        <figure class="icon-nav"> <img src="img/nav-4.png" alt=""> </figure>
+                        Tu Contraseña
+                    </a>
+                </li><!--
+             --><li class="is-active">
+                    <a href="conoce-app.html">
+                        <figure class="icon-nav"> <img src="img/nav-5.png" alt=""> </figure>
+                        Conoce Nuestra App
+                    </a>
+                </li>
+                <li>
+                    <a href="madness.html">
+                        <figure class="icon-nav"> <img src="img/nav-6.png" alt=""> </figure>
+                        Centro de Fanáticos
+                    </a>
+                </li>
+                <li>
+                    <a href="preguntas.html">
+                        <figure class="icon-nav"> <img src="img/nav-7.png" alt=""> </figure>
+                        Preguntas Frecuentes
+                    </a>
+                </li>
+            </ul>
+            <a class="close-btn" id="nav-close-btn" href="#top">Return to Content</a>
+        </div>
+    </nav>
+
+    <div id="main" role="main">
+
+    <section id="conoce" class="block conoce">
+            <h1>Vive la Locura del fútbol con la App Exclusiva de Tigo</h1>
+            
+            <div class="container">
+                <figure>
+                    <a class="fancybox-media" href="https://vimeo.com/93385144"><img src="img/video.jpg" alt=""></a>
+                </figure> 
+
+                <ul >
+                    <li><p>RESÚMENES Y REPETICIONES </p>
+                    <p>de las mejores jugadas.</p></li>
+                    <li>ESTADÍSTICAS DETALLADAS
+                    <p>en tiempo real.</p></li>
+                    <li>VIDEOS ON DEMAND 
+                    <p>exclusivos para ti.</p></li>
+                    <li>34 CÁMARAS MULTI ÁNGULO <p>para no perderte nada.</p></li>
+                    <li>64 JUEGOS EN VIVO! <p>Donde quiera que estés.</p></li>
+                </ul> 
+            </div>
+            
+        </section>
+        
+    </div>
+
+    <footer role="contentinfo" class="contentinfo">
+        <div class="block prose">
+            <h2 >Tigo fanático de los locos por el fútbol</h2>
+            <!--<!--<p style="font-size:.7em;"><a href="tyc.html">Términos y Condiciones</a></p>-->-->
+        </div>
+        <div class="redes-share">
+        <p>Comparte en redes sociales</p>
+           <div class="jquery-script-clear"></div>
+            <div id="sharer-bottom" class="sharer-container"></div>
+        </div>
+    </footer>
+
+</div>
+<!--/#inner-wrap-->
+</div>
+<!--/#outer-wrap Hola Mami-->
+<!-- Add jQuery library -->
+<script src="lib/jquery-1.10.1.min.js"></script>
+<script src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="source/jquery.fancybox.js?v=2.1.5"></script>
+<script src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.sharer.js"></script> 
+<script>$(".sharer-container").sharer()</script> 
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script> -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox').fancybox();
+
+            $('.fancybox-media')
+                .attr('rel', 'media-gallery')
+                .fancybox({
+                    openEffect : 'none',
+                    closeEffect : 'none',
+                    prevEffect : 'none',
+                    nextEffect : 'none',
+
+                    arrows : false,
+                    helpers : {
+                        media : {},
+                        buttons : {}
+                    }
+                });
+
+
+        });
+    </script>
+    <style type="text/css">
+        .fancybox-custom .fancybox-skin {
+            box-shadow: 0 0 50px #222;
+        }
+    </style>
+
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-48885039-12']);
+  _gaq.push(['_setDomainName', 'mundial.tigo.com.co']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</body>
+</html>
